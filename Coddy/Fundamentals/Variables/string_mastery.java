@@ -15,7 +15,7 @@
 // Ortografia do nome da variável — p. ex., firstName, não firtsName
 // O programa imprimirá automaticamente todos os valores em um formato de perfil.
 
-public class Main {
+public class string_mastery {
     public static void main(String[] args) {
         // Create your String variables below
         String firstName = "Alex";
