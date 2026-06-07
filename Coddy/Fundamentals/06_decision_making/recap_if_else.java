@@ -37,5 +37,7 @@ public class recap_if_else {
         }
         
         System.out.println(result);
+
+        scanner.close();
     }
 }

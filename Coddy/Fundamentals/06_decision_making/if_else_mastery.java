@@ -35,8 +35,8 @@ public class if_else_mastery {
         boolean isHoliday = scanner.nextBoolean();
 
         // Your code to determine ticket type and price
-        String ticketType = "";
-        int price = 0;
+        String ticketType;
+        int price;
 
         // Check age ranges: CHILD (under 13), TEEN (13-17), ADULT (18-59), SENIOR (60+)
         if (age < 13) {
@@ -80,5 +80,7 @@ public class if_else_mastery {
         System.out.println("-------------------");
         System.out.println("Ticket Type: " + ticketType);
         System.out.println("Final Price: $" + price);
+
+        scanner.close();
     }
 }
