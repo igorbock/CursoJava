@@ -13,12 +13,11 @@ public class getting_numbers {
         System.out.println("Calculator App");
 
         Scanner scanner = new Scanner(System.in);
-        float num1 = scanner.nextFloat();
-        float num2 = scanner.nextFloat();
+        double num1 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
 
-        System.out.printf("First number: %f", num1);
-        System.out.println();
-        System.out.printf("Second number: %f", num2);
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
 
         scanner.close();
     }
