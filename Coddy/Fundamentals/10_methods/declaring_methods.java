@@ -10,7 +10,11 @@ public class declaring_methods {
     // Method declaration
     public static void sumNumbers() {
         // Complete Method
-        
+        int total = 0;
+        for (int i = 1; i <= 1000; i++) {
+            total += i;
+        }
+        System.out.printf("%d\n", total);
     }
     
     
@@ -19,6 +23,7 @@ public class declaring_methods {
         int n = scanner.nextInt();
         for (int i = 0; i < n; i++) {
             // Call the method n times
+            sumNumbers();
         }
         
         scanner.close();
