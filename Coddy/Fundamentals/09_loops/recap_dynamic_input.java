@@ -26,6 +26,13 @@ public class recap_dynamic_input {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Write your code below
+        int first = scanner.nextInt();
+        int total = 0;
+        for (int i = 1; i <= first; i++) {
+            int value = scanner.nextInt();
+            total += value;
+        }
+        System.out.print(total);
 
         scanner.close();
     }
