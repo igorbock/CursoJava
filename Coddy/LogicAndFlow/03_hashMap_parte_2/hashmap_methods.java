@@ -24,8 +24,10 @@ import java.util.Scanner;
 public class hashmap_methods {
     public static void testHashMapMethods(HashMap<String, Integer> data) {
         // Escreva seu código aqui
-        System.out.printf("Is empty: %s", data.isEmpty());
-        System.out.printf("Size: %d", data.size());
+        System.out.printf("Is empty: %s\n", data.isEmpty());
+        System.out.printf("Size: %d\n", data.size());
+        data.clear();
+        System.out.printf("Is empty after clear: %s\n", data.isEmpty());
     }
 
     public static void main(String[] args) {
