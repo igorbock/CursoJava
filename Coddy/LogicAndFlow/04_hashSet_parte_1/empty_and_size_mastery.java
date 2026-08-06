@@ -22,7 +22,11 @@ import java.lang.reflect.Type;
 public class empty_and_size_mastery {
     public static void compareSets(HashSet<String> set1, HashSet<String> set2) {
         // Escreva seu código aqui
-        
+        System.out.println("Set 1 Empty: " + set1.isEmpty());
+        System.out.println("Set 2 Empty: " + set2.isEmpty());
+        System.out.println("Set 1 Size: " + set1.size());
+        System.out.println("Set 2 Size: " + set2.size());
+        System.out.println("Same Size: " + (set1.size() == set2.size()));
     }
 
     public static void main(String[] args) {
