@@ -33,7 +33,20 @@ import java.lang.reflect.Type;
 public class math__intersection_of_hashset_mastery {
     public static void intersectionWithSubsetCheck(HashSet<Integer> set1, HashSet<Integer> set2) {
         // Escreva seu código aqui
-        
+        HashSet<Integer> intersectionSet = new HashSet<>(set1);
+        intersectionSet.retainAll(set2);
+
+        System.out.println("Intersection: " + intersectionSet);
+
+        if (intersectionSet.isEmpty()) {
+            System.out.println("No common elements.");
+        } else if (intersectionSet.equals(set1)) {
+            System.out.println("Set 1 is fully contained in Set 2");
+        } else if (intersectionSet.equals(set2)) {
+            System.out.println("Set 2 is fully contained in Set 1");
+        } else {
+            System.out.println("Partial intersection");
+        }
     }
     
     public static void main(String[] args) {
