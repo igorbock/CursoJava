@@ -24,7 +24,18 @@ public class regular_expressions_basics {
         if (type == null) {
             return "Invalid type";
         }
-        
+        switch (type) {
+            case "number":
+                return text.matches("\\d+") ? "Valid" : "Invalid";
+            case "word":
+                return text.matches("[a-zA-Z]+") ? "Valid" : "Invalid";
+            case "email":
+                return text.matches(".+@.+") ? "Valid" : "Invalid";
+            case "phone":
+                return text.matches("\\d{10}") ? "Valid" : "Invalid";
+            default:
+                return "Invalid type";
+        }
     }
     
     public static void main(String[] args) {
