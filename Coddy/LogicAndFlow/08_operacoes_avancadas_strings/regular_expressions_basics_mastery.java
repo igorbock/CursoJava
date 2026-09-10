@@ -28,7 +28,7 @@ public class regular_expressions_basics_mastery {
     
     public static String getPasswordStrength(String password) {
         // Escreva seu código aqui
-    }c
+    }
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
