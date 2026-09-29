@@ -1,0 +1,1 @@
+Você recebeu arquivos Java (MyClass.java e Main.java). Crie um objeto MyClass em Main.java para usar a classe do arquivo externo.
