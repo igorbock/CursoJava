@@ -21,6 +21,6 @@ class WashingMachine extends Appliance {
     // Retorno: "[parent info], Capacity: [capacity]kg"
     public String getInfo() {
         String info = super.getInfo();
-        return info + ", Capacity: " + this.capacity;
+        return info + ", Capacity: " + this.capacity + "kg";
     }
 }
