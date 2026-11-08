@@ -1,0 +1,11 @@
+Vamos criar um sistema completo de hierarquia de funcionários que reúne todos os conceitos de herança deste capítulo. Você criará uma estrutura de empresa na qual diferentes tipos de funcionários compartilham atributos comuns, mas têm seus próprios comportamentos especializados.
+
+Você organizará seu código em quatro arquivos:
+
+Employee.java: Crie a classe base compartilhada por todos os funcionários. Todo funcionário tem um nome e um salário. Inclua um construtor que inicialize ambos os campos e um método getDetails() que retorne: [name] earns $[salary]. Adicione também um método work() que imprima: [name] is working.
+Manager.java: Crie uma classe que estenda Employee. Os gerentes têm um campo teamSize adicional, que representa quantas pessoas eles gerenciam. Use super para lidar com a inicialização da classe pai. Sobrescreva o método work() para imprimir: [name] is managing a team of [teamSize]. Adicione um método getManagerDetails() que retorne: Manager: [name] earns $[salary], Team size: [teamSize].
+Developer.java: Crie outra classe que estenda Employee. Os desenvolvedores têm um campo language para sua especialidade de programação. Novamente, use super para a parte pertencente à classe pai. Sobrescreva work() para imprimir: [name] is coding in [language]. Adicione um método getDeveloperDetails() que retorne: Developer: [name] earns $[salary], Language: [language].
+Main.java: Reúna tudo aqui. Você receberá cinco entradas: o nome de um funcionário, o salário, o tamanho da equipe do gerente, outro nome e uma linguagem de programação para o desenvolvedor. Crie um Manager e um Developer; em seguida, para cada um, chame o respectivo método de detalhes especializado, seguido pelo método work().
+Você receberá cinco entradas nesta ordem: nome do gerente (String), salário do gerente (double), tamanho da equipe (int), nome do desenvolvedor (String) e linguagem de programação (String). Use um salário de 75000.0 para o desenvolvedor.
+
+Formate todos os valores de salário com 2 casas decimais usando String.format("%.2f", salary). Sua saída deve mostrar quatro linhas no total — os detalhes e o comportamento de trabalho do gerente, seguidos pelos detalhes e pelo comportamento de trabalho do desenvolvedor.
