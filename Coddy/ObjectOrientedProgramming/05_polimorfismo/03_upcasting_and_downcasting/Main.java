@@ -14,20 +14,24 @@ class Main {
         Media media = new Song(songTitle, artistName);
         
         // TODO: Chame play() na referência Media (demonstra polimorfismo)
-        media.Play();
+        media.play();
         
         // TODO: Faça downcast da referência Media de volta para Song
         Song song = (Song) media;
         
         // TODO: Chame showArtist() na referência Song
-        
+        song.showArtist();
         
         // TODO: Crie um Podcast e faça upcast para uma referência Media
+        Media podMedia = new Podcast(podcastTitle, episodeNumber);
         
         // TODO: Chame play() na referência Media
+        podMedia.play();
         
         // TODO: Faça downcast da referência Media de volta para Podcast
+        Podcast mediaCast = (Podcast) podMedia;
         
         // TODO: Chame showEpisode() na referência Podcast
+        mediaCast.showEpisode();
     }
 }

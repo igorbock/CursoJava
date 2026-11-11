@@ -13,11 +13,11 @@ class Podcast extends Media {
     // TODO: Override play() to print: Playing podcast: [title] - Episode [episode]
     @Override
     public void play() {
-        System.out.println("Playing podcast: " + super.getTitle() + " -  Episode " + this.episode);
+        System.out.println("Playing podcast: " + super.getTitle() + " - Episode " + this.episode);
     }
     
     // TODO: Adicione o método showEpisode() que imprime: Episode: [episode]
     public void showEpisode() {
-        System.out.println("Episode: " this.episode);
+        System.out.println("Episode: " + this.episode);
     }
 }
