@@ -1,0 +1,11 @@
+Vamos criar um sistema de eletrodomésticos que demonstra o poder das classes abstratas. Você criará uma classe base Appliance que define o que todo eletrodoméstico deve fazer, enquanto permite que tipos específicos de eletrodomésticos decidam exatamente como fazer isso.
+
+Você organizará seu código em quatro arquivos:
+
+Appliance.java: crie uma classe abstrata que sirva como modelo para todos os eletrodomésticos. Todo eletrodoméstico tem um campo brand (String) e um campo wattage (int). Inclua um construtor que inicialize ambos os campos, métodos getter para cada um e um método comum getInfo() que retorne: [brand] - [wattage]W. Defina um método abstrato operate() que as subclasses deverão implementar — ele representa como cada eletrodoméstico executa sua função principal.
+WashingMachine.java: crie uma classe concreta que estenda Appliance. Máquinas de lavar têm um campo adicional capacity (int), que representa o tamanho da carga em kg. Use super para cuidar da inicialização da classe pai. Implemente o método operate() para imprimir: [brand] washing machine is washing [capacity]kg of clothes
+Microwave.java: crie outra classe concreta que estenda Appliance. Micro-ondas têm um campo power (int), que representa o percentual do nível de potência. Implemente operate() para imprimir: [brand] microwave is heating at [power]% power
+Main.java: reúna tudo usando polimorfismo. Você receberá cinco entradas: um nome de marca, a potência em watts, a capacidade da máquina de lavar, outro nome de marca e o nível de potência do micro-ondas. Crie uma WashingMachine e um Microwave e, em seguida, armazene-os em um array de referências Appliance. Percorra o array e, para cada eletrodoméstico, imprima suas informações usando getInfo(), seguido da chamada de operate().
+Você receberá cinco entradas nesta ordem: primeira marca (String), primeira potência em watts (int), capacidade em kg (int), segunda marca (String) e nível de potência (int).
+
+Sua saída deverá mostrar quatro linhas — para cada eletrodoméstico, você verá sua linha de informações seguida de seu comportamento de operação. Observe como a classe abstrata permite tratar diferentes eletrodomésticos de maneira uniforme, enquanto cada um funciona de sua própria maneira única!
