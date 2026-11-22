@@ -11,11 +11,12 @@ interface Messenger {
 
     // TODO: Adicione o método default sendWithTimestamp
     default void sendWithTimestamp(String message) {
-        System.out.println("[TIMESTAMP] " + sendMessage(message));
+        System.out.print("[TIMESTAMP] ");
+        sendMessage(message);
     }
     
     // TODO: Adicione o método estático formatMessage
-    static void formatMessage(String message) {
+    static String formatMessage(String message) {
         return message.toUpperCase();
     }
 }

@@ -13,15 +13,15 @@ class Main {
         String formatMessage = Messenger.formatMessage(message);
 
         // TODO: Crie um EmailMessenger com o destinatário do e-mail
-        EmailMessenger email = new EmailMessenger(emailRecipient);
+        Messenger email = new EmailMessenger(emailRecipient);
         
         // TODO: Crie um SMSMessenger com o número de telefone
-        SMSMessenger sms = new SMSMessenger(phoneNumber);
+        Messenger sms = new SMSMessenger(phoneNumber);
         
         // TODO: Chame sendWithTimestamp() no EmailMessenger com a mensagem formatada
-        email.sendWithTimestamp();
+        email.sendWithTimestamp(formatMessage);
         
         // TODO: Chame sendWithTimestamp() no SMSMessenger com a mensagem formatada
-        sms.sendWithTimestamp();
+        sms.sendWithTimestamp(formatMessage);
     }
 }

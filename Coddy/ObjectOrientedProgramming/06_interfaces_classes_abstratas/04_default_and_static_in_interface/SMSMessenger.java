@@ -21,6 +21,7 @@ class SMSMessenger implements Messenger {
     // TODO: Sobrescreva o método sendWithTimestamp com comportamento personalizado
     @Override
     public void sendWithTimestamp(String message) {
-        System.out.println("[URGENT] " + sendMessage(message));
+        System.out.print("[URGENT] ");
+        sendMessage(message);
     }
 }
